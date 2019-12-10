@@ -1,3 +1,74 @@
+@media print {
+.tm-sidebar, .tm-team-img, #about, section:before, .blocks:before, .text:after, .blocks .tm-content-box:last-child, #contact, .img-contact-us, .carousel-indicators {
+  display: none;
+  }
+  body {
+    background-color: white;
+  }
+  .tm-main-content {
+    padding-top: 0;
+    margin: 10px 35px;
+  }
+  div>.tm-banner {
+    border: 0 solid transparent;
+  }
+  .tm-banner-text {
+    text-shadow: none;
+  }
+  .carousel, .padding-medium {
+    padding: 20px;
+  }
+  .tm-banner-inner, .tm-content-box {
+    margin-bottom: 0;
+  }
+  .tm-section-description {
+    text-indent: 0;
+  }
+  .tm-team-description-container {
+    max-width: 100%;
+  }
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .blocks .padding-medium, .padding-medium>h2 {
+    text-align: center;
+  }
+  .text::after {
+    display: none;
+  }
+  .padding-medium>h2 {
+    font-weight: lighter;
+  }
+  .tm-section-description:nth-child(2n) {
+    font-style: normal;
+  }
+  .heading {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .heading>.padding-medium>ol {
+    padding: 0;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+  }
+  .heading>.padding-medium>ol>li:nth-child(2n) {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .heading>.padding-medium>ol>li:nth-child(2n+1) {
+    display: flex;
+    justify-content: flex-end;
+  }
+footer {
+  margin-top: 15px;
+  }
+}
+
 .tm-nav-item :hover {
     background-color: lightskyblue;
     color: #fff;
@@ -20,10 +91,18 @@
   to {right: 0px; top: 0px;}
 }
 
-.flex-2-col{
-  display: flex;
-  text-align: center;
-  align-items: center;
+section .tm-content-box:first-child {
+    display: flex;
+}
+
+section .tm-content-box .tm-section-title {
+    text-align: center;
+}
+
+section .tm-content-box .tm-team-description-container:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .box-bg :hover{
@@ -60,7 +139,7 @@ li .text::after {
   line-height: 30px;
 }
 
-.tm-team-description-container p:last-child {
+.blocks .tm-team-description-container p:last-child {
     font-style: italic;
     letter-spacing: 5px;
     word-spacing: 10px;
