@@ -1,0 +1,180 @@
+
+  html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+main {
+    width: 900px;
+    margin: 0 auto;
+}
+  .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+}
+.logo a {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  width: 20rem;
+  justify-content: space-around;
+}
+.navbar ul li {
+  list-style: none;
+  text-decoration: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #777;
+}
+ul li a:hover {
+  color: #bfba55;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/home-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40.1rem;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  color: #bfba55;
+  margin-top: 0.7rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
+  font-size: 0.5rem;
+}
+.hero .button {
+  border-radius: 20px;
+  border-style: none;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #777;
+  width: 6.5rem;
+  height: 2rem;
+  font-size: 0.5rem;
+  font-weight: bolder;
+}
+hr {
+    color: #777;
+}
+.main {
+    margin-top: 80px;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 10rem 0;
+  max-width: 56rem;
+  margin: 80px 0;
+}
+.article-img {
+  text-align: center;
+}
+.article-content h2 {
+  margin: 40px 0;
+  font-weight: 500;
+}
+.text{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+.text img {
+  border-radius: 50%;
+  width: 40px;
+}
+.text > p:nth-of-type(1) {
+  margin-left: 0.5rem;
+  margin-right: 0.8rem;
+}
+.text i{
+  margin-left: 1rem;
+  margin-right: 0.2rem;
+}
+.article-content .article-text {
+  color: #777;
+  margin-top: 1rem;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+}
+.blog-btn {
+    border: 1px solid #777;
+    margin-top: 20px;
+    height: 40px;
+    width: 160px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: white;
+    color: #777;
+    cursor: pointer;
+}
+footer {
+  background-color: #000;
+  padding-bottom: 4rem;
+  background-size: cover;
+}
+.tm-footer {
+  display: flex;
+  padding: 6rem 10rem 0;
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-1 {
+  padding-right: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.col-1 .ft-text {
+  margin-top: 1.4rem;
+}
+
+.ft-title {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.ft-text {
+  color: #777;
+  width: 20rem;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  line-height: 1.25rem;
+}
+
+.col-2 address {
+  font-style: normal;
+  line-height: 2rem;
+}
